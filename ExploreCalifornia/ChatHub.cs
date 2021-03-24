@@ -22,7 +22,7 @@ namespace ExploreCalifornia
                 "ReceiveMessage",
                 message.SenderName,
                 message.SentAt,
-                message.Text)
+                message.Text);
         }
     }
 }
