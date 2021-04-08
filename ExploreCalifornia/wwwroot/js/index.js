@@ -1,5 +1,13 @@
 ﻿
+function showChatDialog() {
+    var dialogEl = document.getElementById('chatDialog');
+    dialogEl.style.display = 'block';
+}
 
+
+function ready() {
+    setTimeout(showChatDialog, 750);
+}
 
 
 function renderMessage(name, time, message) {
@@ -28,3 +36,6 @@ function renderMessage(name, time, message) {
     chatHistoryEl.appendChild(newItem);
     chatHistoryEl.scrollTop = chatHistoryEl.scrollHeight - chatHistoryEl.clientHeight;
 }
+
+
+document.addEventListener('DOMContentLoaded', ready);
